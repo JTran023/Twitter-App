@@ -165,8 +165,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="V3I-2Q-QGH">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="gxo-HP-Nem"/>
-                        <barButtonItem key="rightBarButtonItem" title="Tweet" id="v1X-uZ-ejK"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="gxo-HP-Nem">
+                            <connections>
+                                <action selector="cancelButton:" destination="ujM-0P-Wbv" id="bh0-qd-5aQ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Tweet" id="v1X-uZ-ejK">
+                            <connections>
+                                <action selector="tweetButton:" destination="ujM-0P-Wbv" id="w7t-xt-7H3"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Od-wE-m1F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
