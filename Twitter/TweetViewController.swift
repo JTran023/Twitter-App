@@ -17,12 +17,6 @@ class TweetViewController: UIViewController {
     }
     
 
-    @IBAction func cancelButton(_ sender: Any) {
-    }
-    
-    
-    @IBAction func tweetButton(_ sender: Any) {
-    }
     /*
     // MARK: - Navigation
 
