@@ -18,6 +18,7 @@ class TweetCellTableViewCell: UITableViewCell {
     
     var favorited:Bool = false
     var tweetID:Int = -1
+    var retweeted:Bool = false
     
     func setFavorite(_ isFavorited:Bool){
         favorited = isFavorited
@@ -27,6 +28,10 @@ class TweetCellTableViewCell: UITableViewCell {
         else{
             likeButton.setImage(UIImage(named: "favor-icon"), for: UIControl.State.normal)
         }
+    }
+    
+    func setRetweeted(_ isRetweeted:Bool){
+        
     }
     
     
