@@ -71,7 +71,7 @@ class HomeTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.loadTweets.rowHeight = UITableView.automaticDimension
+        //self.loadTweets.rowHeight = UITableView.automaticDimension
         self.loadTweets()
         
         
@@ -102,6 +102,7 @@ class HomeTableViewController: UITableViewController {
         }
         
         cell.setFavorite(tweetArray[indexPath.row]["favorited"] as! Bool)
+        cell.tweetID = tweetArray[indexPath.row]["id"] as! Int
         
         return cell
     }
