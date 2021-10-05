@@ -14,7 +14,13 @@ class TweetCellTableViewCell: UITableViewCell {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var tweetContent: UILabel!
     
+    @IBOutlet weak var retweetButton: UIButton!
+    @IBOutlet weak var likeButton: UIButton!
     
+    @IBAction func retweet(_ sender: Any) {
+    }
+    @IBAction func favoriteTweet(_ sender: Any) {
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
