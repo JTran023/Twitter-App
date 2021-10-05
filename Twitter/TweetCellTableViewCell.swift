@@ -43,6 +43,7 @@ class TweetCellTableViewCell: UITableViewCell {
     
     
     @IBAction func retweet(_ sender: Any) {
+        TwitterAPICaller.client?.retweet(tweetID:tweetID, )
     }
     
     
